@@ -14,5 +14,7 @@ class Usuarios(Base):
     email = Column(String)
     senha = Column(String)
 
-if __name__ = 'main'
+if __name__ == '__main__':
+    print engine
+    Base.metadata.create_all(engine) 
     
